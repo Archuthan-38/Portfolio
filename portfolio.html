@@ -2,64 +2,62 @@
 <html>
 <style>
 
-body {
-    background-image: url("pawel-czerwinski-i0h7EEsOwNQ-unsplash.jpg");
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-attachment: fixed;
-    
+   .projects-table {
+        position: relative;
+        top: -265px;
+        left: 240px;
+    }
 
-}
+    a img {
+        border: 2px solid #2a6f97;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-h2 {
-    font-family: verdana;
-    color:#73481aeb;
-    margin-left:30px;
-}
+    a img:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        border-color: #1d4b6c;
+    }
 
-table, th, td {
-	border: 2px solid black;
-	border-collapse: collapse;
-    padding: 5px;
-}
+    body {
+        background-color: aliceblue;
+    }
 
-th {
-    color:#2a6f97;
-}
+    h2 {
+        font-family: verdana;
+        color:#286f8b;
+        margin-left:30px;
+    }
+
+    table, th, td {
+        border: 2px solid rgb(63, 113, 159);
+        border-collapse: collapse;
+        padding: 5px;
+        color: #191a1c;
+    }
+
+    th {
+        color:#3e769c;
+    }
 
 </style>
 
 <body>
 
-<h1 style="text-align:center; background-color:#D2B48C; color:#73481aeb; padding:20px;">My Portfolio</h1>
+<h1 style="text-align:center; background-color:#286f8b; color:#f3eee9eb; padding:20px;">My Portfolio</h1>
 
 <h2 style=>A bit about me</h2>
 
-<p style="margin-left:40px; font-family:georgia;color:#4a4a4a; line-height:1.6;">
-	As a dedicated Computer Science student with a  strong foundation<br>
-    in analytical, problem-solving and programming skills, I aspire to<br>
-    leverage my technical expertise in the financial-tech sector upon<br>
-    graduation.
-    <br>
-    <br>
-    <a href="http://linkedin.com/in/archuthan-mohanathasan-63187424b"
-    style="color:#2a6f97;" target="_blank">My LinkedIn</a>
-    <br>
-    Email: archuthan9@gmail.com
-</p>
+<a href="file:///Users/archuthan/Desktop/Personal%20Projects/Portfolio/abitaboutme.html" 
+   target="_blank"
+   style="margin-left:30px;">
+   <img src="aboutMe.jpg" alt="About Me" width="150">
+</a>
 
-<h2>Programming Languages and Tools Familiar With</h2>
+<h2 class="projects-table">Table of Projects</h2>
 
-<ul style="margin-left:30px;">
-	<li>Python</li>
-	<li>Java</li>
-	<li>HTML</li>
-    <li>CSS</li>
-</ul>
-
-<h2>Table of Projects</h2>
-
-<table style="margin-left:50px;">
+<table class="projects-table" style="margin-left:50px;">
 	<tr>
     	<th>Project</th>
         <th>Language</th>
@@ -70,9 +68,18 @@ th {
         <td>Java</td>
         <td>A text-based adventure game where inputs are used<br>to navigate a series of rooms, interact with characters<br>and more...</td>
     </tr>
-    
-</table>    
+    <tr>
+    	<td>Image Gallery</td>
+        <td>HTML, CSS</td>
+        <td>A gallery of images displayed in a masonry layout<br>with a hover effect...</td>
+    </tr>
+</table>
 
+<a href="file:///Users/archuthan/Desktop/Personal%20Projects/Portfolio/ImageGallery/gallery.html"
+   target="_blank"
+   style="margin-left:30px;">
+   <img src="previewGallery.jpg" alt="Gallery Preview" width="700">
+</a>
 
 </body>
 </html>
